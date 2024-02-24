@@ -108,3 +108,169 @@ var sum=num1+num2;
 sum=sum.toFixed(1);
 sum=parseFloat(sum);
 console.log(sum);
+
+// get and set value by array index number
+var fruits=["apple","orange","lemon","banana"];
+var age=[20,22,24,26,28,30];
+console.log(fruits.length);
+console.log(age.length);
+var total= fruits.length+age.length;
+console.log(total);
+console.log(age[3]);
+age[3]=100;
+console.log(age);
+console.log(age[3]);
+
+//Find the index number of any values from array
+var age=[20,22,24,26,28,30];
+console.log(age[3]);
+age[3]=100;
+console.log(age);
+console.log(age[3]);
+console.log(age.indexOf(30));
+
+//add values to array from last position
+var number=[10,20,30,40,50];
+number.push(60,70);
+console.log(number);
+
+//Remove last number from array and store the pop number in a variable
+var number=[10,20,30,40,50];
+var remove=number.pop();
+console.log(number);
+console.log(remove);
+
+//add values to beginning of array
+var number=[10,20,30,40,50];
+number.unshift(60,70);
+console.log(number);
+
+//remove values from beginning of array
+var number=[10,20,30,40,50];
+var remove=number.shift();
+console.log(number);
+console.log(remove);
+
+// Compare variable by comparison operator:
+var num1=5;
+var num2=8;
+console.log(num1<num2);
+console.log(num1>num2);
+console.log(num1==num2);
+console.log(num1!=num2);
+var num3=10;
+var num4=11;
+console.log(num3<=num4);
+console.log(num3>=num4);
+var num5="12";
+var num6=12;
+console.log(num5===num6);
+console.log(num5!==num6);
+
+// Logical Operator
+var num1=5;
+var num2=6;
+
+// Conditional decision, if, else comparison:
+var salary=40000;
+var graduate="honors";
+var car ="2";
+var home=1;
+var yes="you are qualified";
+var no="You are not qualified"
+if(salary>50000){
+    console.log(yes);
+}
+else{
+    console.log(no);
+}
+if(car===2){
+    console.log(yes);
+}
+else{
+    console.log(no);
+}
+
+//***************Multiple condition**************** */
+// user given data
+var salary=80000;
+var education="honors";
+var car=0;
+// My variable set for user to show them if they are qualified or not
+var yes="you are qualified";
+var no="you are not qualified";
+//My condition, depending on this condition and user given  data, result will be given
+if(education=="honors" && (salary>50000 || car>=1)){
+    console.log(yes);
+}
+else{
+    console.log(no);
+}
+
+// user given data
+var salary=80000;
+var education;
+var car=2;
+// My variable set for user to show them if they are qualified or not
+var yes="you are qualified";
+var no="you are not qualified";
+//My condition, depending on this condition and user given  data, result will be given
+if(education=="honors" && (salary>50000 || car>=1)){
+    console.log(yes);
+}
+else{
+    console.log(no);
+}
+//*************************************************//
+
+// Multi stage condition using if, else if, else
+var salary=50000;
+var car=2;
+var education="honors";
+var age=24;
+var yes="you are qualified";
+var neutral1="we will think";
+var neutral2="you are nearly qualified but not qualified"
+var no="you are not qualified"
+if(salary>80000 && age>23){
+    console.log(yes);
+}
+else if(salary>80000 || education=="Masters"){
+    console.log(neutral1);
+}
+else if(age>23 && car>1){
+    console.log(neutral2)
+}
+else{
+    console.log(no);
+}
+
+// Nested Condition:
+var mathMark=75;
+var physicsMark=78;
+var chemistryMark=80;
+var englishMark=72;
+var literatureMark=75;
+var totalMark=mathMark+physicsMark+chemistryMark+englishMark;
+if(mathMark>80){
+    if(physicsMark>80 && chemistryMark>80){
+        console.log("you are trying hard")
+    }
+    else if( physicsMark>80 || chemistryMark>80){
+        console.log("you are trying hard but you can do more")
+    }
+    else{
+        console.log("oh! are you good in only math?")
+    }
+}
+else if(englishMark>60 && literatureMark>60){
+    if(englishMark>literatureMark){
+        console.log("so you are good in english")
+    }
+    else{
+        console.log("so you are good in literature")
+    }
+}
+else{
+    console.log("You need to study more");
+}
