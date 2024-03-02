@@ -52,6 +52,66 @@ console.log(priceDifference);
 console.log(division)
 console.log(multiplication)
 
+// problem 5
+var fruits=["Apple","Banana","Orange"];
+console.log(fruits.indexOf("Banana"));
+fruits.pop();
+console.log(fruits);
+fruits.push("Watermelon");
+console.log(fruits);
+
+// problem 6
+// user given value
+var myScore=85;
+var tomScore=66;
+var janeScore=95;
+var peterScore=56;
+var johnScore=40;
+if(80<=johnScore){
+    console.log("A grade")
+}
+else if(60<=johnScore){
+    console.log("B grade")
+}
+else if(50<=johnScore){
+    console.log("C grade");
+}
+else if(40<=johnScore){
+    console.log("D grade");
+}
+else{
+    console.log("F grade");
+}
+
+// problem 7
+var num1=13;
+var num2=79;
+var num3=73;
+if(num1>num2 && num1>num3){
+    console.log("Largest number is: "+num1);
+}
+else if(num2>num1 && num2>num3){
+    console.log("Largest number is: "+num2);
+}
+else if(num3>num1 && num3>num2){
+    console.log("Largest number is: "+num3);
+}
+else{
+    console.log("Couldn't find specific largest number");
+}
+
+// problem 8
+var a=9;
+var b=8;
+var c=9;
+if(a==b || b==c || a==c){
+    console.log("This Triangle is Isoceles");
+}
+else{
+    console.log("This triangle is not Isoceles");
+}
+
+
 // setting a new value for existing variable
 var mango=5;
 var mango=10;
@@ -274,3 +334,4 @@ else if(englishMark>60 && literatureMark>60){
 else{
     console.log("You need to study more");
 }
+
