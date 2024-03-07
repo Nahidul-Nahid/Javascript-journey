@@ -86,18 +86,15 @@ else{
 // problem 7
 var num1=13;
 var num2=79;
-var num3=73;
+var num3=85;
 if(num1>num2 && num1>num3){
     console.log("Largest number is: "+num1);
 }
 else if(num2>num1 && num2>num3){
     console.log("Largest number is: "+num2);
 }
-else if(num3>num1 && num3>num2){
-    console.log("Largest number is: "+num3);
-}
 else{
-    console.log("Couldn't find specific largest number");
+    console.log("Largest number is: "+num3);
 }
 
 // problem 8
@@ -335,3 +332,53 @@ else{
     console.log("You need to study more");
 }
 
+// Javascript loop
+var abc=0;
+while(abc<10){
+	console.log("abc is less than 10");
+    console.log(abc);
+	abc++;
+}
+//1 theke 10 porjonto dekhate chaile, var a er value 1 dite hobe. and conditon <= eirup condition use korte hobe.
+var a=1;
+while(a<=10){
+    console.log(a);
+    a++;
+}
+
+// Odd number in 1-10
+var a=1;
+while(a<=10){
+    console.log(a);
+    a+=2;
+}
+
+// Even number in 1-10
+var a=0;
+while(a<=10){
+    console.log(a);
+    a+=2;
+}
+
+// for loop
+for(var i=0;i<=10;i+=2){
+    console.log(i);
+}
+
+// Run a loop for showing each element from an array
+var colors=["red","brown","orange","blue","white","black","green"];
+var length=colors.length;
+for(var i=0;i<length;i++){
+    var color=colors[i];
+    console.log(color);
+}
+
+// Loop Break
+var num=[10,20,30,40,50,35,65,24,75];
+for(var i=0;i<num.length;i++){
+    var number=num[i]
+    if(i>4){
+        break;
+    }
+    console.log(number);
+}
