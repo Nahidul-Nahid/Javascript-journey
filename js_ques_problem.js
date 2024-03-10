@@ -2,7 +2,7 @@
 //      Javascript is a cross platform ,interpreted compiled programming language. It is also known as scripting language for webpage. It controls multimedia within web pages and allows them to become interactive. 
 
 // 2.   How does js works
-//      JS is a single threaded and single concurrent programming language which means it can handle one task at a time or, it uses dynamic typing, where type safety is verified at the runtime.
+//      JS is a single threaded and single concurrent programming language which means it can handle one task at a time, it uses dynamic typing, where type safety is verified at the runtime.
 
 // 3.   What is variable
 //      Variables are containers for storing information. In other words, Variables are named values and can store any type of value.
@@ -49,6 +49,8 @@
 //21.   Comparison Operator >,<, ==, !=, <=, >=, ===, !==
 //21.   Logical operator, && , || , !(a==b)
 //22.   Difference between while loop and for loop
+//23.   What is function
+        // A function in JavaScript is similar to a procedure. a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.
 
 // loop Problem 1: write "ajke amr mon vlo nei" for 9 times
 var i=1;
@@ -101,3 +103,4 @@ for(var i=0;i<bookPrices.length;i++){
     }
     console.log(price);
 }
+
