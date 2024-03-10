@@ -382,3 +382,140 @@ for(var i=0;i<num.length;i++){
     }
     console.log(number);
 }
+
+//Condition in loop
+var a=1;
+while(a<=7){
+    if(a%2==0){
+        console.log(a,"is even number");
+    }
+    else{
+        console.log(a,"is odd number");
+    }
+    a++;
+}
+
+//slice(),substring(),includes()
+var nam1=["Nahidul","Islam","Nahid","some","thing"];
+var nam="Nahidul Islam Nahid";
+var some=nam1.slice(2,4);
+console.log(some);
+var none=nam.substring(2,6);
+console.log(none);
+console.log(nam.includes("l I"));
+
+//Function
+function success(year){
+    console.log("focus on forward about only what i really want to do");
+    console.log("Success should be get",year);
+}
+success("as first as possible");
+
+// Function with multiple parameter
+function sum(a,b,c,d,e,f){
+    var sum=a+b+c+d+e+f;
+    console.log(sum);
+}
+var total=sum(5,6,7,8,9,4);
+
+//Return from a function
+function sum(a,b,c,d,e){
+    var sum=a+b+c+d+e;
+    console.log("Given numbers:",a,b,c,d,e);
+    return sum;
+}
+var total=sum(1,2,3,4,5);
+console.log("sum of these number:",total);
+
+//Average number return from a function
+function avgNum(a,b,c,d,e){
+    const sum=a+b+c+d+e;
+    const average=sum/5;
+    console.log("Given numbers:",a,b,c,d,e);
+    return average;
+}
+const valueA=1;
+const valueB=2;
+const valueC=3;
+const valueD=4;
+const valueE=5
+const avg=avgNum(valueA,valueB,valueC,valueD,valueE);
+console.log("Averege of these number:",avg);
+
+//one function, multiple time parameter value setting
+function sum(number1,number2){
+    var sum=number1+number2;
+    return sum;
+}
+var one=1;
+var two=2;
+var total1=sum(one,two);
+var total2=sum(total1,total1);
+var finalTotal=sum(total1,total2);
+console.log(finalTotal);
+
+// Square of a given number
+function square(number){
+    return Math.pow(number, 3);
+}
+var some=square(3);
+console.log(some);
+
+//random thinking when i bought some eggs
+var egg=["egg1","egg2","egg3","egg4","egg5","egg6","egg7"];
+var quantity=[10,9,8,12,11.03,15,10.5];
+for(i=0;i<egg.length;i++){
+    console.log("The quantity of"+" "+egg[i]+" "+"is",quantity[i],"gm");
+}
+
+//Object
+var myLaptop={
+    brand: "Asus",
+    ram: "4gb",
+    ssd: "250gb",
+    color: "silver",
+    price: 43000
+}
+console.log(myLaptop);
+console.log(Object.keys(myLaptop)); // Object.keys(objectName), evabe ekti object er shb keys gulo array akare dekhano jay.
+console.log(Object.values(myLaptop)); // Object.values(objectName), evabe ekti object er shb values gulo array akare dekhano jay.
+
+//Total 3 ti upaye kono keys er value get and set kora jay.
+// 1.
+var laptopBrand=myLaptop.brand;
+console.log(laptopBrand);
+// 2.
+var laptopRam=myLaptop["ram"];
+console.log(laptopRam);
+// 3.--------- ei way te dynamic vabe value get kora jay. property keys er name ekti variable e set kore, sei variable ti objectName[variableName], evabe third bracket e likhte hoy.
+var lap_ram="price";
+var ram_size=myLaptop[lap_ram];
+console.log(lap_ram,ram_size);
+
+//Advance looping through an object
+// Hard way:
+var bottle={
+    brand: "Coca-Cola",
+    quantity: "1.25L",
+    color: "black",
+    brandColor: "red",
+    bottleColor: "white"
+}
+var bottleKeys=Object.keys(bottle);
+for(i=0;i<bottleKeys.length;i++){
+    var keys=bottleKeys[i];
+    var values=bottle[keys];
+    console.log(keys,values);
+}
+// Easy way by for in loop:
+var bottle={
+    brand: "Coca-Cola",
+    quantity: "1.25L",
+    color: "black",
+    brandColor: "red",
+    bottleColor: "white"
+}
+for(var keys in bottle){
+    var values=bottle[keys];
+    console.log(keys,values)
+}
