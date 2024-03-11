@@ -3,6 +3,8 @@
 
 // 2.   How does js works
 //      JS is a single threaded and single concurrent programming language which means it can handle one task at a time, it uses dynamic typing, where type safety is verified at the runtime.
+//      JavaScript has no compilation step. Instead, an interpreter in the browser reads over the JavaScript code, interprets each line, and runs it. More modern browsers use a technology known as Just-In-Time (JIT) compilation, which compiles JavaScript to executable bytecode just as it is about to run.
+//      A compiler translates the entire source code into machine code before execution, resulting in faster execution since no translation is needed during runtime. On the other hand, an interpreter translates code line by line during execution, making it easier to detect errors but potentially slowing down the program.
 
 // 3.   What is variable
 //      Variables are containers for storing information. In other words, Variables are named values and can store any type of value.
