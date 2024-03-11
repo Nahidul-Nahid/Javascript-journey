@@ -519,3 +519,135 @@ for(var keys in bottle){
     var values=bottle[keys];
     console.log(keys,values)
 }
+
+//Get average of some numbers by using function and loop
+function make_avg(marks,length){
+    var total=0;
+    for(i=0;i<length;i++){
+        total+=marks[i];
+    }
+    var avg=total/length;
+    console.log(avg);
+}
+var mark=[50,60,70,80,90];
+var lengthOfMark=mark.length;
+make_avg(mark,lengthOfMark)
+
+
+//Using switch and case, instead of if else, switch is faster version of if else
+var one=15;
+switch(one){
+    case 8:
+        console.log("The number is 8");
+        break;
+    case 7:
+        console.log("The number is 7");
+        break;
+    case 5:
+        console.log("The number is 5");
+        break;
+    default:
+        console.log("The number is not here");
+}
+
+// Take a integer number, and show it is even or odd number by using function
+// has parameter no return
+function odd_even(a){
+    if(a%2==0){
+        console.log(a,"is even number");
+    }
+    else{
+        console.log(a,"is odd number");
+    }
+}
+odd_even(6);
+
+// Has parameter has return
+function odd_even(a){
+    if(a%2==0){
+        return a+" "+"is even number";
+    }
+    else{
+        return a+" "+"is odd number";
+    }
+}
+var odd_even=odd_even(7);
+console.log(odd_even);
+
+// road signal using if else
+var signal="green";
+if(signal=="red"){
+    console.log("You may be in danger");
+}
+else if(signal=="yellow"){
+    console.log("You should stop");
+}
+else{
+    console.log("You should cross the road");
+}
+
+// road signal using switch
+var signal="yellow";
+switch(signal){
+    case "red":
+        console.log("You may be in danger");
+        break;
+    case "yellow":
+        console.log("You should stop");
+        break;
+    default:
+        console.log("you should cross the road");
+}
+
+//inch to feet
+function inchToFeet(inch){
+    let feet=inch/12;
+    return feet;
+}
+let window=74;
+let door=44;
+let room=200;
+let feet=inchToFeet(room);
+feet=feet.toFixed(2);
+feet=parseFloat(feet);
+console.log(feet)
+
+//km to miles
+function kmToMiles(km){
+    let miles=km/1.60934;
+    return miles;
+}
+let miles=kmToMiles(68);
+console.log(miles);
+
+//miles to km
+function milesToKm(miles){
+    let km=miles*1.60934;
+    return km;
+}
+let km=milesToKm(27);
+console.log(km);
+
+//Even or Odd number checking
+function evenOrOdd(number){
+    let remainder=number%2;
+    if(remainder==0){
+        return "True";
+    }
+    else{
+        return "False";
+    }
+}
+let number=evenOrOdd(64);
+console.log(number);
+
+//Leap year checking
+function leapYear(year){
+    let leapYear=year%4;
+    if(leapYear==0){
+        return true;
+    }
+    return false;
+}
+let givenYear=leapYear(2024);
+console.log(givenYear);
